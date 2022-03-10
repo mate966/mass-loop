@@ -1,9 +1,31 @@
 #header {
-    text-align: center;
-    margin-top: 37.5px;
+    overflow: hidden;
+    margin-top: 37px;
+}
+
+.header__content {
+    position: relative;
+    padding-top: 60px;
+    width: 360px;
+    margin: 0 auto;
 }
 
 .crusher-image {
-    margin: 60px auto;
-    width: 70%;
+    transform: translateX(-30px);
+}
+
+.button {
+    position: absolute;
+    right: 20px;
+    top: 291px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background: url(../assets/carry-bag-icon.png), $main-orange;
+    background-repeat: no-repeat;
+    background-size: 37%;
+    padding: 17px 26px;
+    background-position: center;
+    cursor: pointer;
 }

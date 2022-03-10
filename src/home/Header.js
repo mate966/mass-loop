@@ -6,11 +6,14 @@ const Header = () => {
             <h1 className="welcome-heading">
                 Inteligenta kruszarka, która zamienia szkło w piasek.
             </h1>
-            <img
-                src={crusherImage}
-                alt="Kruszarka firmy Mass Loop"
-                class="crusher-image"
-            />
+            <div className="header__content">
+                <img
+                    src={crusherImage}
+                    alt="Kruszarka firmy Mass Loop"
+                    className="crusher-image"
+                />
+                <button className="button"></button>
+            </div>
         </header>
     );
 };
