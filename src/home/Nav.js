@@ -7,7 +7,7 @@ const Nav = () => {
     const [isActive, setIsActive] = useState(false);
 
     return (
-        <nav id="nav" class="wrapper">
+        <nav id="nav" className="wrapper">
             <img src={logo} alt="Logo firmy Mass Loop" className="logo" />
             <div className="nav__content">
                 <LanguageSwitcher />

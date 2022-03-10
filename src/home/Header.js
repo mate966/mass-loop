@@ -12,7 +12,7 @@ const Header = () => {
                     alt="Kruszarka firmy Mass Loop"
                     className="crusher-image"
                 />
-                <button className="button"></button>
+                <button className="cart-button"></button>
             </div>
         </header>
     );

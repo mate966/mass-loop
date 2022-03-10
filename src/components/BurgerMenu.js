@@ -5,13 +5,13 @@ const BurgerMenu = ({ isActive, setIsActive }) => {
 
     return (
         <div
-            class={isActive ? "hamburger" : "hamburger is-active"}
+            className={isActive ? "hamburger is-active" : "hamburger"}
             id="hamburger-1"
             onClick={handleActive}
         >
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
         </div>
     );
 };

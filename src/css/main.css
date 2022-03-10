@@ -22,9 +22,16 @@ body {
 }
 
 .section-heading {
-  padding: 50px 0 25px 0;
+  padding: 50px 25px 25px 25px;
   font-size: 2.4rem;
   line-height: 2.9rem;
+  font-weight: 900;
+}
+
+.section-subheading {
+  padding: 40px 20px;
+  font-size: 1.6rem;
+  line-height: 19.5px;
   font-weight: 900;
 }
 
@@ -125,12 +132,12 @@ body {
           transform: translateX(-30px);
 }
 
-.button {
+.cart-button {
   position: absolute;
   right: 20px;
   top: 291px;
   width: 80px;
-  height: 80px;
+  min-height: 80px;
   border: none;
   border-radius: 50%;
   background: url(../assets/carry-bag-icon.png), #ffb001;
@@ -143,12 +150,89 @@ body {
 
 #about {
   width: 100%;
-  height: 313px;
+  min-height: 313px;
   background-color: #ffb001;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 0px 15px white;
   box-shadow: 0px 0px 0px 15px white;
   -webkit-transform: translateY(-180px);
           transform: translateY(-180px);
+}
+
+#calculator {
+  margin-top: -170px;
+}
+
+.calculator__input-container {
+  margin: 20px 0;
+}
+
+input {
+  margin-bottom: 40px;
+  width: 225px;
+  min-height: 70px;
+  border-radius: 15px;
+  border: 1px solid #212121;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #c2c2c2;
+}
+
+input:focus {
+  border: 1px solid #ffb001;
+  outline: none;
+  color: #212121;
+}
+
+.calculator__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 213px;
+  border-radius: 15px;
+  background-color: #212121;
+  color: white;
+}
+
+.result__span {
+  display: block;
+  margin: 15px 0;
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 32px;
+  opacity: 0.5;
+}
+
+#buy {
+  margin: 60px 0;
+}
+
+.buy-button {
+  margin: 60px 0;
+  width: 320px;
+  height: 80px;
+  border: none;
+  border-radius: 47.5px;
+  background-color: #ffb001;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #212121;
+  -webkit-box-shadow: 0px 34px 64px -10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 34px 64px -10px rgba(0, 0, 0, 0.15);
+}
+
+.buy-button span {
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-transform: lowercase;
 }
 /*# sourceMappingURL=main.css.map */

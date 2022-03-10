@@ -1,0 +1,25 @@
+#buy {
+    margin: 60px 0;
+}
+
+.buy-button {
+    margin: 60px 0;
+    width: 320px;
+    height: 80px;
+    border: none;
+    border-radius: 47.5px;
+    background-color: $main-orange;
+    font-family: $main-font;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $main-black;
+    box-shadow: 0px 34px 64px -10px rgba(0, 0, 0, 0.15);
+
+    span {
+        font-family: $second-font;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        text-transform: lowercase;
+    }
+}

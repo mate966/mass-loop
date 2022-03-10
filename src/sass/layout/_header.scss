@@ -14,12 +14,12 @@
     transform: translateX(-30px);
 }
 
-.button {
+.cart-button {
     position: absolute;
     right: 20px;
     top: 291px;
     width: 80px;
-    height: 80px;
+    min-height: 80px;
     border: none;
     border-radius: 50%;
     background: url(../assets/carry-bag-icon.png), $main-orange;
