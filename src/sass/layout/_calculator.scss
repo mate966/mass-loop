@@ -4,9 +4,14 @@
 
 .calculator__input-container {
     margin: 20px 0;
+    height: 240px;
+
+    &:first-of-type {
+        margin-top: 60px;
+    }
 }
 
-input {
+.input {
     margin-bottom: 40px;
     width: 225px;
     min-height: 70px;

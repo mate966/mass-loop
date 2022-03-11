@@ -9,7 +9,7 @@ const Buy = () => {
                     <button className="buy-button">
                         Kup <span>8499 zł</span>
                     </button>
-                    <p className="section-heading">
+                    <p className="section-heading--smaller">
                         Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!
                     </p>
                 </div>

@@ -9,6 +9,13 @@
     font-size: 2.4rem;
     line-height: 2.9rem;
     font-weight: 900;
+
+    &--smaller {
+        padding: 0 40px;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-weight: 900;
+    }
 }
 
 .section-subheading {

@@ -10,10 +10,6 @@
     margin: 0 auto;
 }
 
-.crusher-image {
-    transform: translateX(-30px);
-}
-
 .cart-button {
     position: absolute;
     right: 20px;
@@ -24,8 +20,6 @@
     border-radius: 50%;
     background: url(../assets/carry-bag-icon.png), $main-orange;
     background-repeat: no-repeat;
-    background-size: 37%;
-    padding: 17px 26px;
     background-position: center;
     cursor: pointer;
 }
