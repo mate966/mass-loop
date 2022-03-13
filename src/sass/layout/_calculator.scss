@@ -61,10 +61,13 @@
     background-color: $main-black;
     color: white;
 
+    @include breakpoint("xs") {
+        min-height: 127px;
+    }
+
     @include breakpoint("md") {
         margin: 0 auto;
         max-width: 1012px;
-        min-height: 127px;
     }
 }
 
