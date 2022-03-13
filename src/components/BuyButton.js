@@ -1,5 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 const BuyButton = () => {
-    return <button className="buy-button buy-button--nav">Kup</button>;
+    const { t } = useTranslation("buy");
+
+    return (
+        <button className="buy-button buy-button--nav">{t("button")}</button>
+    );
 };
 
 export default BuyButton;

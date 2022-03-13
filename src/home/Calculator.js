@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Calculator = () => {
     const [yearlySavings, setYearlySavings] = useState(0);
@@ -6,6 +7,7 @@ const Calculator = () => {
         amount: 0,
         cost: 0,
     });
+    const { t } = useTranslation(["calculator"]);
 
     const calcYearlySavings = (a, b) => {
         const consumption = a * b * 12;
@@ -33,14 +35,12 @@ const Calculator = () => {
     return (
         <section id="calculator">
             <div className="calculator__content wrapper">
-                <h2 className="section-heading">Ile zaoszczędzisz?</h2>
-                <p className="paragraph">Rachunek jest prosty.</p>
+                <h2 className="section-heading">{t("title")}</h2>
+                <p className="paragraph">{t("subtitle")}</p>
                 <div data-aos="zoom-in">
                     <div className="calculator__inputs-container">
                         <div className="calculator__input">
-                            <p className="section-subheading">
-                                Ile pojemników na szkło zapełniasz miesięcznie?
-                            </p>
+                            <p className="section-subheading">{t("input1")}</p>
                             <input
                                 type="number"
                                 placeholder="20"
@@ -50,9 +50,7 @@ const Calculator = () => {
                             />
                         </div>
                         <div className="calculator__input">
-                            <p className="section-subheading">
-                                Ile płacisz za wywóz jednego pojemnika na szkło?
-                            </p>
+                            <p className="section-subheading">{t("input2")}</p>
                             <input
                                 type="number"
                                 placeholder="20 zł"
@@ -64,7 +62,7 @@ const Calculator = () => {
                     </div>
                     <div className="calculator__result">
                         <p className="section-subheading">
-                            Dzięki kruszarce zaoszczędzisz
+                            {t("result")}
                             <span
                                 className={
                                     yearlySavings === "0"
@@ -75,7 +73,7 @@ const Calculator = () => {
                                 {yearlySavings === "0" ? "960" : yearlySavings}{" "}
                                 zł
                             </span>
-                            rocznie.
+                            {t("result2")}
                         </p>
                     </div>
                 </div>

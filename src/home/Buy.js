@@ -1,17 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 const Buy = () => {
+    const { t } = useTranslation(["buy"]);
+
     return (
         <>
             <section id="buy">
                 <div className="buy__content wrapper">
-                    <p className="paragraph">
-                        To na co wydasz zaoszczędzoną gotówkę?
-                    </p>
+                    <p className="paragraph">{t("question")}</p>
                     <button className="buy-button">
-                        Kup <span>8499 zł</span>
+                        {t("button")} <span>8499 zł</span>
                     </button>
-                    <p className="section-heading--smaller">
-                        Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!
-                    </p>
+                    <p className="section-heading--smaller">{t("sentence")}</p>
                 </div>
             </section>
         </>

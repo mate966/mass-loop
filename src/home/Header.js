@@ -1,17 +1,17 @@
 import { useMediaQuery } from "react-responsive";
+import { useTranslation } from "react-i18next";
 
 import crusherImage from "../assets/mass-loop-crusher.png";
 import crusherImageDesktop from "../assets/mass-loop-crusher-desktop.png";
 
 const Header = () => {
     const isDesktop = useMediaQuery({ query: "(min-width: 992px)" });
+    const { t } = useTranslation(["heading"]);
 
     return (
         <header id="header">
             <div data-aos="fade-left">
-                <h1 className="welcome-heading">
-                    Inteligenta kruszarka, która zamienia szkło w piasek.
-                </h1>
+                <h1 className="welcome-heading">{t("heading")}</h1>
             </div>
             <div data-aos="fade-left">
                 <div className="header__content">

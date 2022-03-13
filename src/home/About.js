@@ -1,14 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+    const { t } = useTranslation(["about"]);
+
     return (
         <section id="about">
             <div className="about__content wrapper">
-                <h2 className="section-heading">
-                    Płać 5 razy mniej za wywóz odpadów szklanych.
-                </h2>
-                <p className="paragraph">
-                    Kruszarka zmniejsza gabaryty szklanych śmieci, a Ty płacisz
-                    PIĘ-CIO-KROT-NIE niższe rachunki za ich wywóz.
-                </p>
+                <h2 className="section-heading">{t("describe")}</h2>
+                <p className="paragraph">{t("pros")}</p>
             </div>
         </section>
     );

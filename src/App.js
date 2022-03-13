@@ -1,8 +1,7 @@
 import { useEffect } from "react";
+import AOS from "aos";
 
 import Home from "./home/Home";
-
-import AOS from "aos";
 
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import "./css/main.css";
