@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nazwa/static/css/main.4c1a2de8.css",
+    "main.js": "/nazwa/static/js/main.194b1e1a.js",
+    "static/media/mass-loop-crusher.png": "/nazwa/static/media/mass-loop-crusher.9aaba710258e3be9a240.png",
+    "index.html": "/nazwa/index.html",
+    "main.4c1a2de8.css.map": "/nazwa/static/css/main.4c1a2de8.css.map",
+    "main.194b1e1a.js.map": "/nazwa/static/js/main.194b1e1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c1a2de8.css",
+    "static/js/main.194b1e1a.js"
+  ]
+}
