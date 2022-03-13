@@ -21,8 +21,6 @@ const Nav = () => {
                 setIsSticky(false);
             }
         });
-        console.log(sticky);
-        console.log(window.pageYOffset);
         return () => window.removeEventListener("scroll", scrollCallBack);
     }, []);
 

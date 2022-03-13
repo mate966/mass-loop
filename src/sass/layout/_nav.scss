@@ -1,30 +1,58 @@
 #nav {
+    position: sticky;
+    left: 0;
+    top: 0;
     width: 100%;
+    margin-top: 54px;
+    padding-top: 5px;
     background-color: #fff;
+    transition: 0.4s;
+    z-index: 10;
+
+    @include breakpoint("md") {
+        margin-top: 40px;
+    }
 }
 
 .nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 59px;
     background-color: #fff;
-    z-index: 999;
-    // transition: 0.4s;
 
     @include breakpoint("md") {
-        margin-top: 45px;
-        height: 90px;
+        justify-content: center;
     }
 }
 
 .logo {
-    max-width: 97px;
-    height: 41px;
+    @include breakpoint("md") {
+        width: 119.5px;
+    }
 }
 
 .nav__content {
     display: flex;
+}
+
+.sticky {
+    padding: 55px 0 5px 0 !important;
+    box-shadow: 0px 4px 24px -5px rgba(0, 0, 0, 0.15);
+    touch-action: none;
+
+    @include breakpoint("md") {
+        padding: 19px 0 !important;
+    }
+}
+
+.nav__menu {
+    .buy-button--nav {
+        display: block;
+        margin: auto;
+        width: 152px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
 }
 
 // This Pen is owned by Rosa on CodePen.
@@ -64,24 +92,4 @@
     -ms-transform: translateY(-11px) rotate(-45deg);
     -o-transform: translateY(-11px) rotate(-45deg);
     transform: translateY(-11px) rotate(-45deg);
-}
-
-.sticky {
-    position: sticky;
-    left: 0;
-    top: -1px;
-    box-shadow: 0px 4px 24px -5px rgba(0, 0, 0, 0.15);
-    // transition: 0.4s;
-    touch-action: none;
-    z-index: 999;
-}
-
-.nav__menu {
-    .buy-button--nav {
-        display: block;
-        margin: auto;
-        width: 152px;
-        height: 50px;
-        font-size: 1.6rem;
-    }
 }
