@@ -26,6 +26,10 @@
         color: $main-orange;
     }
 
+    @include breakpoint("md") {
+        // margin-bottom: 80px;
+    }
+
     &--nav {
         display: none;
 

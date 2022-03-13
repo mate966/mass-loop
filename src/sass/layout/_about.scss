@@ -7,4 +7,21 @@
     -moz-box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 1);
     transform: translateY(-179px);
+
+    @include breakpoint("md") {
+        margin: 0 auto;
+        max-width: 95%;
+        min-height: 305px;
+        border-radius: 30px;
+        -webkit-box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 1);
+        transform: translateY(-373px);
+    }
+}
+
+.about__content {
+    @include breakpoint("md") {
+        max-width: 700px;
+    }
 }

@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 const Calculator = () => {
     const [yearlySavings, setYearlySavings] = useState(960);
     const [costOfrecycling, setcostOfrecycling] = useState({
-        amount: 20,
-        cost: 20,
+        amount: 0,
+        cost: 0,
     });
 
     const calcYearlySavings = (a, b) => {
@@ -38,29 +38,33 @@ const Calculator = () => {
             <div className="calculator__content wrapper">
                 <h2 className="section-heading">Ile zaoszczędzisz?</h2>
                 <p className="paragraph">Rachunek jest prosty.</p>
-                <div className="calculator__input-container">
-                    <p className="section-subheading">
-                        Ile pojemników na szkło zapełniasz miesięcznie?
-                    </p>
-                    <input
-                        type="text"
-                        value={costOfrecycling.amount}
-                        name="amount"
-                        className="input"
-                        onChange={handleChange}
-                    />
-                </div>
-                <div className="calculator__input-container">
-                    <p className="section-subheading">
-                        Ile płacisz za wywóz jednego pojemnika na szkło?
-                    </p>
-                    <input
-                        type="text"
-                        value={costOfrecycling.cost}
-                        name="cost"
-                        className="input"
-                        onChange={handleChange}
-                    />
+                <div className="calculator__inputs-container">
+                    <div className="calculator__input">
+                        <p className="section-subheading">
+                            Ile pojemników na szkło zapełniasz miesięcznie?
+                        </p>
+                        <input
+                            type="text"
+                            placeholder="20"
+                            // value={costOfrecycling.amount}
+                            name="amount"
+                            className="input"
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div className="calculator__input">
+                        <p className="section-subheading">
+                            Ile płacisz za wywóz jednego pojemnika na szkło?
+                        </p>
+                        <input
+                            type="text"
+                            // value={costOfrecycling.cost}
+                            placeholder="20"
+                            name="cost"
+                            className="input"
+                            onChange={handleChange}
+                        />
+                    </div>
                 </div>
                 <div className="calculator__result">
                     <p className="section-subheading">
