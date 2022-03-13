@@ -1,0 +1,15 @@
+.language-input {
+    margin-right: 29px;
+    border: none;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+    &-selected {
+        border: none;
+        outline: none;
+    }
+}

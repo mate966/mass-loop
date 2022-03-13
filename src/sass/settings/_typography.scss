@@ -29,3 +29,16 @@
     font-size: 1.6rem;
     line-height: 2.5rem;
 }
+
+.menu-paragraph {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: $main-black;
+    text-decoration: none;
+    transition: 0.4s;
+
+    &:hover {
+        color: $main-orange;
+    }
+}

@@ -64,8 +64,8 @@ const Calculator = () => {
                 </div>
                 <div className="calculator__result">
                     <p className="section-subheading">
-                        Dzięki kruszarce zaoszczędzisz{" "}
-                        <span className="result__span">{yearlySavings} zł</span>{" "}
+                        Dzięki kruszarce zaoszczędzisz
+                        <span className="result__span">{yearlySavings} zł</span>
                         rocznie.
                     </p>
                 </div>

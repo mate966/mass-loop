@@ -3,8 +3,13 @@
 @import "./settings/base";
 @import "./settings/typography";
 @import "./settings/wrapper";
+@import "./settings/breakpoints";
+
+@import "./components/buyButton";
+@import "./components/languageSwitcher";
 
 @import "./layout/nav";
+@import "./layout/menu";
 @import "./layout/header";
 @import "./layout/about";
 @import "./layout/calculator";
