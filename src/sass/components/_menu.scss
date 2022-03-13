@@ -18,12 +18,16 @@
     @include breakpoint("md") {
         margin: 0 30px;
     }
+
+    @include breakpointLandscape("xs") {
+        margin: 25px 30px;
+    }
 }
 
 .not-active {
     position: absolute;
     left: 0;
-    top: -80vh;
+    top: -130vh;
     width: 100%;
     transition: 1s;
 

@@ -238,10 +238,16 @@ body {
   }
 }
 
+@media (min-width: 512px) and (orientation: landscape) {
+  .menu-item {
+    margin: 25px 30px;
+  }
+}
+
 .not-active {
   position: absolute;
   left: 0;
-  top: -80vh;
+  top: -130vh;
   width: 100%;
   -webkit-transition: 1s;
   transition: 1s;
