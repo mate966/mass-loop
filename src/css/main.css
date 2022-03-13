@@ -471,13 +471,11 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   text-align: center;
-  color: #c2c2c2;
 }
 
-.input:focus {
+.input :focus {
   border: 1px solid #ffb001;
   outline: none;
-  color: #212121;
 }
 
 @media (min-width: 992px) {
@@ -525,6 +523,11 @@ body {
     margin: 0 24px 0 17px;
     font-size: 2.4rem;
   }
+}
+
+.result__span--color {
+  opacity: 1;
+  color: #ffb001;
 }
 
 #buy {

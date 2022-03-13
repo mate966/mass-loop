@@ -8,25 +8,28 @@ const Header = () => {
 
     return (
         <header id="header">
-            <h1 className="welcome-heading">
-                Inteligenta kruszarka, która zamienia szkło w piasek.
-            </h1>
-            <div className="header__content">
-                {isDesktop ? (
-                    <img
-                        src={crusherImageDesktop}
-                        alt="Kruszarka firmy Mass Loop"
-                        className="crusher-image"
-                    />
-                ) : (
-                    <img
-                        src={crusherImage}
-                        alt="Kruszarka firmy Mass Loop"
-                        className="crusher-image"
-                    />
-                )}
-
-                <button className="cart-button"></button>
+            <div data-aos="fade-left">
+                <h1 className="welcome-heading">
+                    Inteligenta kruszarka, która zamienia szkło w piasek.
+                </h1>
+            </div>
+            <div data-aos="fade-left">
+                <div className="header__content">
+                    {isDesktop ? (
+                        <img
+                            src={crusherImageDesktop}
+                            alt="Kruszarka firmy Mass Loop"
+                            className="crusher-image"
+                        />
+                    ) : (
+                        <img
+                            src={crusherImage}
+                            alt="Kruszarka firmy Mass Loop"
+                            className="crusher-image"
+                        />
+                    )}
+                    <button className="cart-button"></button>
+                </div>
             </div>
         </header>
     );

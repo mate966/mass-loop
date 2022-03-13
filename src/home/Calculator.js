@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const Calculator = () => {
-    const [yearlySavings, setYearlySavings] = useState(960);
+    const [yearlySavings, setYearlySavings] = useState(0);
     const [costOfrecycling, setcostOfrecycling] = useState({
         amount: 0,
         cost: 0,
@@ -13,20 +13,17 @@ const Calculator = () => {
         const yearlySave = consumption - consumptionWithCrusher;
 
         return yearlySave > 10000000
-            ? null
+            ? setYearlySavings("ponad 10 000 000")
             : setYearlySavings(yearlySave.toFixed(2).replace(".00", ""));
     };
 
     const handleChange = (e) => {
         const value = e.target.value;
-        const regex = new RegExp("^[0-9]*$");
 
-        !regex.test(value)
-            ? alert("Wpisz cyfry!")
-            : setcostOfrecycling({
-                  ...costOfrecycling,
-                  [e.target.name]: value,
-              });
+        setcostOfrecycling({
+            ...costOfrecycling,
+            [e.target.name]: value,
+        });
     };
 
     useEffect(() => {
@@ -38,40 +35,49 @@ const Calculator = () => {
             <div className="calculator__content wrapper">
                 <h2 className="section-heading">Ile zaoszczędzisz?</h2>
                 <p className="paragraph">Rachunek jest prosty.</p>
-                <div className="calculator__inputs-container">
-                    <div className="calculator__input">
-                        <p className="section-subheading">
-                            Ile pojemników na szkło zapełniasz miesięcznie?
-                        </p>
-                        <input
-                            type="text"
-                            placeholder="20"
-                            // value={costOfrecycling.amount}
-                            name="amount"
-                            className="input"
-                            onChange={handleChange}
-                        />
+                <div data-aos="zoom-in">
+                    <div className="calculator__inputs-container">
+                        <div className="calculator__input">
+                            <p className="section-subheading">
+                                Ile pojemników na szkło zapełniasz miesięcznie?
+                            </p>
+                            <input
+                                type="number"
+                                placeholder="20"
+                                name="amount"
+                                className="input"
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className="calculator__input">
+                            <p className="section-subheading">
+                                Ile płacisz za wywóz jednego pojemnika na szkło?
+                            </p>
+                            <input
+                                type="number"
+                                placeholder="20 zł"
+                                name="cost"
+                                className="input"
+                                onChange={handleChange}
+                            />
+                        </div>
                     </div>
-                    <div className="calculator__input">
+                    <div className="calculator__result">
                         <p className="section-subheading">
-                            Ile płacisz za wywóz jednego pojemnika na szkło?
+                            Dzięki kruszarce zaoszczędzisz
+                            <span
+                                className={
+                                    yearlySavings === "0"
+                                        ? "result__span"
+                                        : "result__span result__span--color"
+                                }
+                            >
+                                {yearlySavings === "0" ? "960" : yearlySavings}{" "}
+                                zł
+                            </span>
+                            rocznie.
                         </p>
-                        <input
-                            type="text"
-                            // value={costOfrecycling.cost}
-                            placeholder="20"
-                            name="cost"
-                            className="input"
-                            onChange={handleChange}
-                        />
                     </div>
-                </div>
-                <div className="calculator__result">
-                    <p className="section-subheading">
-                        Dzięki kruszarce zaoszczędzisz
-                        <span className="result__span">{yearlySavings} zł</span>
-                        rocznie.
-                    </p>
                 </div>
             </div>
         </section>

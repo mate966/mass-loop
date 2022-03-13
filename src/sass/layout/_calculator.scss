@@ -41,12 +41,10 @@
     font-family: $main-font;
     font-size: 1.6rem;
     text-align: center;
-    color: #c2c2c2;
 
-    &:focus {
+    :focus {
         border: 1px solid $main-orange;
         outline: none;
-        color: $main-black;
     }
 
     @include breakpoint("md") {
@@ -82,5 +80,10 @@
         display: inline-block;
         margin: 0 24px 0 17px;
         font-size: 2.4rem;
+    }
+
+    &--color {
+        opacity: 1;
+        color: $main-orange;
     }
 }
