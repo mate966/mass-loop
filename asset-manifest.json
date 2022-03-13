@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mass-loop/static/css/main.5c2694d3.css",
+    "main.css": "/mass-loop/static/css/main.db9c0733.css",
     "main.js": "/mass-loop/static/js/main.24f13f5e.js",
     "static/media/mass-loop-crusher-desktop.png": "/mass-loop/static/media/mass-loop-crusher-desktop.c0f7babbc7406ca2df81.png",
     "static/media/mass-loop-crusher.png": "/mass-loop/static/media/mass-loop-crusher.086c8c1b0fd269f6ff1e.png",
     "index.html": "/mass-loop/index.html",
     "static/media/getFetch.cjs": "/mass-loop/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.5c2694d3.css.map": "/mass-loop/static/css/main.5c2694d3.css.map",
+    "main.db9c0733.css.map": "/mass-loop/static/css/main.db9c0733.css.map",
     "main.24f13f5e.js.map": "/mass-loop/static/js/main.24f13f5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c2694d3.css",
+    "static/css/main.db9c0733.css",
     "static/js/main.24f13f5e.js"
   ]
 }
