@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mass-loop/static/css/main.99821daa.css",
-    "main.js": "/mass-loop/static/js/main.82359413.js",
-    "static/media/mass-loop-crusher-desktop.png": "/mass-loop/static/media/mass-loop-crusher-desktop.82f9cc4a5fd85b36abc1.png",
-    "static/media/mass-loop-crusher.png": "/mass-loop/static/media/mass-loop-crusher.9aaba710258e3be9a240.png",
+    "main.css": "/mass-loop/static/css/main.e9458d6b.css",
+    "main.js": "/mass-loop/static/js/main.9af4b522.js",
+    "static/media/mass-loop-crusher-desktop.png": "/mass-loop/static/media/mass-loop-crusher-desktop.c0f7babbc7406ca2df81.png",
+    "static/media/mass-loop-crusher.png": "/mass-loop/static/media/mass-loop-crusher.086c8c1b0fd269f6ff1e.png",
     "index.html": "/mass-loop/index.html",
-    "main.99821daa.css.map": "/mass-loop/static/css/main.99821daa.css.map",
-    "main.82359413.js.map": "/mass-loop/static/js/main.82359413.js.map"
+    "main.e9458d6b.css.map": "/mass-loop/static/css/main.e9458d6b.css.map",
+    "main.9af4b522.js.map": "/mass-loop/static/js/main.9af4b522.js.map"
   },
   "entrypoints": [
-    "static/css/main.99821daa.css",
-    "static/js/main.82359413.js"
+    "static/css/main.e9458d6b.css",
+    "static/js/main.9af4b522.js"
   ]
 }
